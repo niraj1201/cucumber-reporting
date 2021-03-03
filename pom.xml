@@ -5,7 +5,7 @@
     <packaging>jar</packaging>
     <version>5.5.3-SNAPSHOT</version>
     <name>cucumber-reporting</name>
-    <url>https://github.com/damianszczepanik/cucumber-reporting</url>
+    <url>https://github.com/niraj1201/cucumber-reporting.git</url>
 
     <properties>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
@@ -26,24 +26,26 @@
     </parent>
 
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
-        </repository>
+        <id>Releases</id>
+        <name>Releases</name>
+        <url>http://ec2-34-251-113-184.eu-west-1.compute.amazonaws.com:8081/repository/Releases</url>
+    </repository>
+    <snapshotRepository>
+        <id>Snapshots</id>
+        <name>Snapshots</name>
+        <url>http://ec2-34-251-113-184.eu-west-1.compute.amazonaws.com:8081/repository/maven-snapshots</url>
+    </snapshotRepository>
     </distributionManagement>
 
     <scm>
-        <connection>scm:git:git@github.com:damianszczepanik/cucumber-reporting.git</connection>
-        <developerConnection>scm:git:git@github.com:damianszczepanik/cucumber-reporting.git</developerConnection>
-        <url>git@github.com:damianszczepanik/cucumber-reporting.git</url>
+        <connection>scm:git:git@github.com:niraj1201/cucumber-reporting.git</connection>
+        <developerConnection>scm:git:git@github.com:niraj1201/cucumber-reporting.git</developerConnection>
+        <url>git@github.com:niraj1201/cucumber-reporting.git</url>
     </scm>
     <ciManagement>
         <system>travis</system>
-        <url>https://travis-ci.org/damianszczepanik/cucumber-reporting</url>
+        <url>http://ec2-3-249-188-24.eu-west-1.compute.amazonaws.com:8080/job/Cucumber-reporting/</url>
     </ciManagement>
 
     <description>
